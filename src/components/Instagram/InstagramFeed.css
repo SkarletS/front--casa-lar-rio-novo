@@ -1,0 +1,116 @@
+.instagram-feed-card {
+    width: 20%;
+    max-width: 900px;
+    margin: 190px auto;
+    padding: 15px;
+    background-color: #eeecec;
+    border-radius: 10px;
+    border: solid #e9e6e6;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .instagram-feed-card iframe {
+    border: none;
+    width: 100%;
+    height: 500px;
+  }
+  
+    .top-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; 
+    border: 2px solid rgb(204, 201, 201); 
+    margin-right: 15px; 
+  }
+  
+  .follow-btn {
+    margin-left: -135px; 
+    margin-top: 60px;
+    padding: 6px 15px;
+    background-color: #2d7bf0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .follow-btn:hover {
+    background-color: #226ad4; 
+  }
+  
+  .sub-text {
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    margin: 0;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .instagram-feed-card {
+      width: 60%; /* O card ocupa 90% da largura da tela */
+      margin-top: 80px; /* Menor margem superior */
+      padding: 20px;
+    }
+  
+    .logo-img {
+      width: 90px; /* Imagem menor em telas menores */
+      height: 90px;
+      margin-right: 10px;
+    }
+  
+    .follow-btn {
+      padding: 8px 14px; /* Ajusta o tamanho do botão */
+      font-size: 15px;
+    }
+  
+    .sub-text {
+      font-size: 20px; /* Menor tamanho de fonte para telas menores */
+      margin-bottom: 20px;
+    }
+  
+    .top-section {
+      flex-direction: row; /* Alinha os itens verticalmente */
+      align-items: flex-start; /* Alinha à esquerda */
+    }
+  
+    .logo-container {
+      flex-direction: row; /* Logo e botão ficam empilhados */
+      align-items: center; /* Centraliza a logo e o botão */
+    }
+  
+    .follow-btn {
+      margin-left: -135px; /* Remove a margem esquerda do botão em telas pequenas */
+      margin-top: 50px; /* Coloca o botão abaixo da imagem */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sub-text {
+      font-size: 20px; /* Tamanho da fonte para telas muito pequenas */
+    }
+  
+    .instagram-feed-card {
+      width: 80%; /* Faz o card ocupar 100% da tela */
+      margin-top: 60px; /* Menos margem superior */
+    }
+  
+    .follow-btn {
+      font-size: 15px; /* Ajusta o tamanho do botão para telas muito pequenas */
+      padding: 8px 14px;
+    }
+  }
+  

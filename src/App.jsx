@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Footer, Header, MainContainer } from './components';
 import { About, Contact, Donations, Faq, Home, NotFound } from './screens';
 import { WhatsAppButton } from './components/WhatsAppButton/WhatsAppButton';
+import InstagramFeed from './components/Instagram/InstagramFeed';
 
 const App = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -30,6 +31,11 @@ const App = () => {
             <Route path="/donations" element={<Donations />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+
+          <Routes>
+            <Route path="/" element={<InstagramFeed />} /> {/* Apenas na home */}
+          </Routes>
+
         </MainContainer>
       </div>
       {showFooter && <Footer />}
